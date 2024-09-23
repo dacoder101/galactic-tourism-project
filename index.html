@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galactic Tourism Project</title>
-    <link rel="stylesheet" href="./assets/index.css">
-</head>
-<body>
-    <header id="title-section">
-        
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galactic Tourism Project</title>
+        <link rel="stylesheet" href="./assets/css/index.css" />
+    </head>
+    <body>
+        <header id="title-section">
+            <div id="title">
+                <h1 id="project-title" class="text-header">
+                    Galactic Tourism:<br />
+                    Holes Tour
+                </h1>
+            </div>
+            <div id="description">
+                <h2>
+                    Discover the wonders of the universe. Visit some of the most
+                    extreme and mysterious objects in the cosmos.
+                </h2>
+                <p>
+                    Our tour covers three destinations; some of the most extreme
+                    celestial objects that practically defy spacetime.
+                </p>
+            </div>
+        </header>
 
-    <div id="destinations">
-        <div id="black-hole">
+        <div id="destinations">
+            <div id="black-hole" onclick="displayContent('blackHole')">
+                <h2 class="text-header">Black Hole</h2>
+                <p>
+                    A black hole may look scary, but how would you even know?
+                    Their gravitational pull is so strong that nothing, not even
+                    light, can escape. So maybe you won't really be seeing a
+                    black hole on our tour, but the event horizon is just as
+                    cool!
+                </p>
+            </div>
+            <div id="white-hole" onclick="displayContent('whiteHole')">
+                <h2 class="text-header">White Hole</h2>
+                <p>
+                    A white hole is the black hole's antisocial cousin.
+                    It spits out matter and light, but never lets any in.
+                    Problem is, we really don't know if they exist. Please don't ask for a refund!
+                </p>
+            </div>
+            <div id="worm-hole" onclick="displayContent('wormhole')">
+                <h2 class="text-header">Wormhole</h2>
+                <p>
+            </div>
         </div>
-        <div id="white-hole">
-        </div>
-        <div id="worm-hole">
-        </div>
-    </div>
 
-    <footer id="footer-section">
-        <b id="copyright-text"></b>
-    </footer>
-    <script src="./assets/index.js"></script>
-</body>
+        <footer id="footer-section">
+            <div id="copyright">
+                <b id="copyright-text"></b>
+            </div>
+            <div id="socials-section">
+                <h3>Follow Us</h3>
+                <div id="socials">
+                    <a href="https://x.com/"
+                        ><img
+                            src="./assets/img/socials/facebook.png"
+                            alt="Facebook"
+                            class="social-icon"
+                            width="32px"
+                            height="32px"
+                    /></a>
+                    <a href="https://facebook.com/"
+                        ><img
+                            src="./assets/img/socials/x.png"
+                            alt="X"
+                            class="social-icon"
+                            width="32px"
+                            height="32px"
+                    /></a>
+                    <a href="https://instagram.com/"
+                        ><img
+                            src="./assets/img/socials/instagram.png"
+                            alt="Instagram"
+                            class="social-icon"
+                            width="32px"
+                            height="32px"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/func.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </body>
 </html>
