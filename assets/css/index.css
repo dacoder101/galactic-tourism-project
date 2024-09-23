@@ -51,9 +51,9 @@ body {
 }
 
 .content-image {
-    width: 100%;
+    width: 256px;
     height: auto;
-    margin: 20px 0;
+    margin-right: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 2px solid var(--secondary-accent-color);
 }
