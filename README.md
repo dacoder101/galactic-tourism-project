@@ -21,4 +21,6 @@ This ended up being one of the nicest static websites I've ever made. I used Git
 
 This took me about a week to make, or ~10 hours in total. I grinded most of the raw content on 9/22/24 and spent most of the time prior decorating with CSS.
 
-**If this wasn't already obvious, this project will not be maintained.**
+---
+
+**If this wasn't already obvious, this project will not be maintained by me following the date of submission, however, I'm open to noting this likely doesn't work on smaller viewports and would greatly appreciate any contributions.**
