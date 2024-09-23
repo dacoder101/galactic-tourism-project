@@ -75,7 +75,6 @@ div#destinations {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    cursor: pointer;
 }
 
 div#destinations > div {
