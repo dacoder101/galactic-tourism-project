@@ -50,6 +50,14 @@ body {
     text-shadow: 0 0 10px var(--secondary-link-color);
 }
 
+.content-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--secondary-accent-color);
+}
+
 .divider {
     border: none;
     height: 2px;
