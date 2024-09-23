@@ -18,7 +18,25 @@ function backgroundChange() {
 
 function displayContent(displayMenu) {
     const menu = document.getElementById(displayMenu);
+    menu.style.visibility = "visible";
 }
+
+function closeContent(displayMenu) {
+    const menu = document.getElementById(displayMenu);
+    menu.style.visibility = "hidden";
+}
+
+const closeButton = document.getElementById("info-close-button");
+const originalContent = closeButton.innerHTML;
+
+closeButton.addEventListener("mouseover", () => {
+    closeButton.innerHTML =
+        '<img src="./assets/img/rick-astley.gif" width="32px" height="32px"><p style="fonts-size: 6px">i had to get you back</p>';
+});
+
+closeButton.addEventListener("mouseout", () => {
+    closeButton.innerHTML = originalContent;
+});
 
 window.addEventListener("load", () => {
     backgroundChange();

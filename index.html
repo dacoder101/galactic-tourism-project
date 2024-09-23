@@ -27,7 +27,7 @@
         </header>
 
         <div id="destinations">
-            <div id="black-hole" onclick="displayContent('blackHole')">
+            <div id="black-hole" onclick="displayContent('black-hole-info')">
                 <h2 class="text-header">Black Hole</h2>
                 <p>
                     A black hole may look scary, but how would you even know?
@@ -37,7 +37,7 @@
                     cool!
                 </p>
             </div>
-            <div id="white-hole" onclick="displayContent('whiteHole')">
+            <div id="white-hole" onclick="displayContent('white-hole-info')">
                 <h2 class="text-header">White Hole</h2>
                 <p>
                     A white hole is the black hole's antisocial cousin. It spits
@@ -46,12 +46,93 @@
                     refund!
                 </p>
             </div>
-            <div id="worm-hole" onclick="displayContent('wormhole')">
+            <div id="worm-hole" onclick="displayContent('wormhole-info')">
                 <h2 class="text-header">Wormhole</h2>
                 <p>
                     If you're too lazy to wait two light years to reach the next
                     solar system, a wormhole is a solid option; assuming we can
                     locate one for you... no promises!
+                </p>
+            </div>
+        </div>
+
+        <div id="info-div" class="travel-info-div">
+            <div class="travel-info-div-content" id="info-content">
+                <button
+                    id="info-close-button"
+                    class="close-button"
+                    onclick="closeContent('info-div')"
+                >
+                    Close
+                </button>
+                <div id="info-text">
+                    <h2 id="info-title" class="text-header">
+                        Welcome to Galactic Tourism
+                    </h2>
+                    <h3>Interacting with the Website</h3>
+                    <p id="info-description">
+                        Click on any of the destinations above to learn more
+                        about them. Click the close button to return to the main
+                        page.
+                    </p>
+                    <h3>Background Information</h3>
+                    <p id="info-description">
+                        I focused on mostly decoration for this website; it
+                        ended up becoming one of the more visually appealing
+                        projects I've made. Hopefully I'll have the chance to
+                        code more projects in the future!
+
+                        <br /><br />
+
+                        This website is open-source and available on
+                        <a
+                            href="https://github.com/dacoder/galactic-tourism-project"
+                            class="link"
+                            >GitHub</a
+                        >.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="travel-info-div" id="black-hole-info">
+            <div class="travel-info-div-content">
+                <button
+                    class="close-button"
+                    onclick="closeContent('black-hole-info')"
+                >
+                    Close
+                </button>
+                <h2 class="text-header">Black Hole</h2>
+                <p>
+                </p>
+            </div>
+        </div>
+
+        <div class="travel-info-div" id="white-hole-info">
+            <div class="travel-info-div-content">
+                <button
+                    class="close-button"
+                    onclick="closeContent('white-hole-info')"
+                >
+                    Close
+                </button>
+                <h2 class="text-header">White Hole</h2>
+                <p>
+                </p>
+            </div>
+        </div>
+
+        <div class="travel-info-div" id="wormhole-info">
+            <div class="travel-info-div-content">
+                <button
+                    class="close-button"
+                    onclick="closeContent('wormhole-info')"
+                >
+                    Close
+                </button>
+                <h2 class="text-header">Wormhole</h2>
+                <p>
                 </p>
             </div>
         </div>
