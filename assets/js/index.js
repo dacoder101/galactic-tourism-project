@@ -4,11 +4,11 @@ document.getElementById(
 
 function backgroundChange() {
     const backgroundURLS = [
-        "url('../img/bg/black.jpg')",
-        "url('../img/bg/purple.jpg')",
-        "url('../img/bg/stars.jpg')",
-        "url('../img/bg/blue.jpg')",
-        "url('../img/bg/pink.jpg')",
+        "url('./assets/img/bg/black.jpg')",
+        "url('./assets/img/bg/purple.jpg')",
+        "url('./assets/img/bg/stars.jpg')",
+        "url('./assets/img/bg/blue.jpg')",
+        "url('./assets/img/bg/pink.jpg')",
     ];
 
     const randomBackground = Math.floor(Math.random() * backgroundURLS.length);
@@ -20,4 +20,7 @@ function displayContent(displayMenu) {
     const menu = document.getElementById(displayMenu);
 }
 
-backgroundChange();
+window.addEventListener("load", () => {
+    backgroundChange();
+    setInterval(backgroundChange, 10000);
+});

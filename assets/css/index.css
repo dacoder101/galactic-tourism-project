@@ -16,10 +16,15 @@
     src: url("../fonts/fh-space.otf") format("opentype");
 }
 
+html,
 body {
-    font-family: "Fh Space", Arial, sans-serif;
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: "Fh Space", Arial, sans-serif;
     color: var(--accent-color);
     background-image: url("../img/bg/black.jpg");
     background-repeat: no-repeat;
@@ -96,6 +101,7 @@ div#destinations > div p {
 }
 
 footer#footer-section {
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
