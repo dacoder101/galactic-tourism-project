@@ -14,8 +14,8 @@
 }
 
 @font-face {
-    font-family: "Fh Space";
-    src: url("../fonts/fh-space.otf") format("opentype");
+    font-family: "Garet";
+    src: url("../fonts/garet.otf") format("opentype");
 }
 
 html,
@@ -24,10 +24,11 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Fh Space", Arial, sans-serif;
+    font-family: "Garet", Arial, sans-serif;
     color: var(--accent-color);
     background-image: url("../img/bg/black.jpg");
     background-repeat: no-repeat;
@@ -47,6 +48,35 @@ body {
 
 .link:active {
     text-shadow: 0 0 10px var(--secondary-link-color);
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        rgba(102, 252, 241, 1) 0%,
+        rgba(69, 162, 158, 1) 50%,
+        rgba(102, 252, 241, 1) 100%
+    );
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.5),
+        0 0 20px rgba(102, 252, 241, 0.5), 0 0 30px rgba(102, 252, 241, 0.5);
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.5),
+        0 0 20px rgba(102, 252, 241, 0.5), 0 0 30px rgba(102, 252, 241, 0.5);
 }
 
 .text-header {
@@ -142,8 +172,10 @@ div#destinations > div p {
     border-radius: 10px;
     text-align: center;
     max-width: 600px;
+    max-height: 80%;
     width: 80%;
     position: relative;
+    overflow: auto;
 }
 
 .close-button {
@@ -158,6 +190,12 @@ div#destinations > div p {
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: var(--secondary-accent-color);
 }
 
 footer#footer-section {
